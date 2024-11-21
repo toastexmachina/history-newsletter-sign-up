@@ -1,0 +1,137 @@
+
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  * {
+    margin: 0;
+  }
+  
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  input, button, textarea, select {
+    font: inherit;
+    border-radius: 1rem;
+  }
+  
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+    font-size: 5em;
+  }
+  
+  p {
+    text-wrap: pretty;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+  
+  #root, #__next {
+    isolation: isolate;
+  }
+
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+:root {
+  --padding-left: 10rem;
+}
+
+img.main {
+    max-height: 100vh;
+}
+
+h1, p {
+    font-size: 7rem;
+}
+
+label {
+  font-size: 3rem;
+}
+
+input {
+    font-size: 4rem;
+    width:50rem;
+    border: 3px solid black;
+}
+
+input:not(:focus):placeholder-shown {
+  border-color: black;
+}
+
+input:invalid {
+border-color: red;
+}
+
+input:valid,
+input:not(:focus):valid {
+border-color: green;
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
+
+.container {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5rem;
+    padding-left: var(--padding-left);
+    background-color: rgb(240, 239, 238);
+    flex-grow: 1;
+}
+
+
+fieldset {
+  margin-left: calc((var(--padding-left)*-1));
+  padding-left: var(--padding-left);
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+  background: white;
+}
+
+section.form-columns {
+    display: flex;
+    flex-direction: row;
+    gap: 10rem;
+    flex-grow: 1;
+}
+
+div.column-1 label,
+div.column-1 input ,
+div.column-2 label,
+div.column-2 input {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  margin-top: 3rem;
+  font-size: 3rem;
+  background-color:rgba(127, 122, 109, 1);
+  color: white;
+  border-radius: 1rem;
+  padding: 1.5rem 6rem;
+}
+
+form p {
+  font-size: 4rem;
+}
