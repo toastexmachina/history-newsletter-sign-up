@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ancient History Newsletter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <div class="container">
+            <div class="image">
+                <img class="main" src="./assets/greta-farnedi-QZf06ZkEG8A-unsplash.jpg" alt="Statue of Hercules and the Centaur Nessus">
+            </div>
+            <div class="content">
+                <header>
+                    <h1>Stories from the ancient past.</h1>
+                    <p>Sign up now and learn more about Ancient Greece, Rome, and more.</p>
+                    <p>A new article in your inbox every day!</p>
+                </header>
+                <form action="" method="post">
+
+                    <fieldset>
+                        <h2>Let's do this!</h2>
+
+                        <section class="form-columns">
+                            <!-- Must change organization of inputs -->
+                            <!-- "Tab" brings you down the column rather than across and wrap over -->
+                            <div class="column-1">
+                                <label for="first-name">FIRST NAME*</label>
+                                <input type="text" id="first-name" name="first-name" placeholder= "Julius" required>
+                                <label for="email">EMAIL*</label>
+                                <input type="email" id="email" name="email" placeholder="julius@caesar.com" required>
+                                <label for="password">PASSWORD*</label>
+                                <input type="password" id="password" name="password" required minlength="6">
+                            </div>
+                            <div class="column-2">
+                                <label for="last-name">LAST NAME*</label>
+                                <input type="text" id="last-name" name="last-name" placeholder="Caesar" required>
+                                <label for="phone-number">PHONE NUMBER</label>
+                                <input type="tel" id="phone-number" name="phone-number" placeholder="xxx-xxx-xxxx" pattern="^\(?\d{3}\)?[- ]?\d{3}[- ]?\d{4}$" required>
+                                <label for="confirm-password">CONFIRM PASSWORD*</label>
+                                <input type="password" id="confirm-password" name="confirm-password" required>
+                            </div>
+                        </section>
+                    </fieldset>
+
+                    <button type="submit">CREATE ACCOUNT</button>
+                    <p>Already have an account? <a href="">Log in</a></p>
+                </form>
+
+            </div>
+        </div>
+
+</body>
+</html>
