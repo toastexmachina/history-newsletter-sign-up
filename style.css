@@ -13,11 +13,7 @@
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
   }
-  
-  img, picture, video, canvas, svg {
-    display: block;
-    max-width: 100%;
-  }
+
   
   input, button, textarea, select {
     font: inherit;
@@ -26,7 +22,6 @@
   
   p, h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
-    font-size: 5em;
   }
   
   p {
@@ -46,25 +41,36 @@
 */
 
 :root {
-  --padding-left: 10rem;
+  --padding-left: 5rem;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+    padding-left: var(--padding-left);
+    background-color: rgb(240, 239, 238);
+    flex-grow: 1;
 }
 
 img.main {
     max-height: 100vh;
 }
 
-h1, p {
-    font-size: 7rem;
+h1, h2, p {
+    font-size: 1.5rem;
 }
 
 label {
-  font-size: 3rem;
+  font-size: 1rem;
 }
 
 input {
-    font-size: 4rem;
-    width:50rem;
-    border: 3px solid black;
+    font-size: 1rem;
+    width:15rem;
+    border: 1px solid black;
+    border-radius: 5px;
 }
 
 input:not(:focus):placeholder-shown {
@@ -89,17 +95,6 @@ input:focus::placeholder {
     justify-content: flex-start;
 }
 
-.content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 5rem;
-    padding-left: var(--padding-left);
-    background-color: rgb(240, 239, 238);
-    flex-grow: 1;
-}
-
-
 fieldset {
   margin-left: calc((var(--padding-left)*-1));
   padding-left: var(--padding-left);
@@ -111,7 +106,7 @@ fieldset {
 section.form-columns {
     display: flex;
     flex-direction: row;
-    gap: 10rem;
+    gap: 5rem;
     flex-grow: 1;
 }
 
@@ -124,14 +119,14 @@ div.column-2 input {
 }
 
 button {
-  margin-top: 3rem;
-  font-size: 3rem;
+  margin-top: 1rem;
+  font-size: 1rem;
   background-color:rgba(127, 122, 109, 1);
   color: white;
   border-radius: 1rem;
-  padding: 1.5rem 6rem;
+  padding: 1rem 2rem;
 }
 
 form p {
-  font-size: 4rem;
+  font-size: 1rem;
 }
